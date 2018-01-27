@@ -1,0 +1,32 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}This is an example page{% endblock %}
+
+
+{% block content %}
+  <h1>Hello, Bootstrap 3</h1>
+  <div class="container">
+    <form action = "/login" method = "POST">
+        <div class="container">
+
+            PSS name:<br>
+            <input type="text" name="pss_name" value="Mickey">
+            <br><br>
+
+            TSA name:<br>
+            <input type="text" name="tsa_name" value="Mouse">
+            <br><br>
+
+            <input type="submit" name="BtnClick" value="Submit">
+            <input type="submit" name="BtnClick" value="Sign In">
+
+            <p>If you click the "Submit" button, the form-data will be sent to a function called "/inputs".</p>
+
+        </div>
+    </form>
+  </div>
+
+{% endblock %}
+
+
+
+
